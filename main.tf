@@ -27,3 +27,8 @@ module "workspace" {
 #   from = module.workspace
 #   to = module.workspace["fem-eci-workspace"]
 # }
+
+# moved {
+#   from = module.workspace["fem-eci-workspace"]
+#   to = module.workspace["fem-eci-tfe"]
+# }
