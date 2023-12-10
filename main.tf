@@ -12,7 +12,7 @@ module "workspace" {
   source  = "ALT-F4-LLC/workspace/tfe"
   version = "0.8.0"
   description = each.value.description
-  execution_mode = "local"
+  execution_mode = each.value.execution_mode
   name = each.key
   organization_name = var.organization_name
   project_id = each.value.project_id
